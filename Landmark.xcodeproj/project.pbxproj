@@ -161,10 +161,10 @@
 				112C98572692AF260021AC07 /* LandmarkApp.swift */,
 				112C98592692AF260021AC07 /* ContentView.swift */,
 				11EECFC32694717D00A2CBBA /* LandmarkList.swift */,
+				11EECFC72694749300A2CBBA /* LandmarkDetail.swift */,
 				11EECFB626942F6000A2CBBA /* CircleImage.swift */,
 				112C9884269400190021AC07 /* MapView.swift */,
 				11EECFBF26945C2200A2CBBA /* landmarkRow.swift */,
-				11EECFC72694749300A2CBBA /* LandmarkDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
