@@ -7,7 +7,14 @@
 
 import Foundation
 
-var landmarks:[Landmark] = load("landmarkData.json")
+
+final class ModelData: ObservableObject{
+//事件发送者
+  @Published var landmarks:[Landmark] = load("landmarkData.json")
+
+}
+
+
 
 func load<T:Decodable>(_ filename:String) -> T {
     let data:Data

@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    //@EnvironmentObject 在视图层次结构中较低的视图中使用此属性从较高的视图接收数据。
+    @EnvironmentObject var modelData: ModelData
     var landmark:Landmark
+    
+    var landmarkIndex :Int{
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+
+    }
+    
     
     var body: some View {
         ScrollView {
@@ -19,8 +27,12 @@ struct LandmarkDetail: View {
                 .offset(x: 0, y: -130)
                 .padding(.bottom,-130)
             VStack(alignment: .leading){
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                        .foregroundColor(.primary)
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
                 HStack {
                     Text(landmark.park)
                         .font(.subheadline)
@@ -44,7 +56,9 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelDate = ModelData()
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])
+        LandmarkDetail(landmark: modelDate.landmarks[0])
+            .environmentObject(modelDate)
     }
 }
