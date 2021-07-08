@@ -18,7 +18,13 @@ struct landmarkRow: View {
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
             Text(landmark.name)
+            
             Spacer()
+            
+            if(landmark.isFavorite){
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
