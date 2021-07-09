@@ -22,6 +22,7 @@
 		11EECFC42694717D00A2CBBA /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECFC32694717D00A2CBBA /* LandmarkList.swift */; };
 		11EECFC82694749300A2CBBA /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECFC72694749300A2CBBA /* LandmarkDetail.swift */; };
 		11EECFCC2696D1D200A2CBBA /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECFCB2696D1D200A2CBBA /* FavoriteButton.swift */; };
+		11EECFE126985CCB00A2CBBA /* swift_继承.md in Resources */ = {isa = PBXBuildFile; fileRef = 11EECFE026985CCB00A2CBBA /* swift_继承.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		11EECFC32694717D00A2CBBA /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		11EECFC72694749300A2CBBA /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		11EECFCB2696D1D200A2CBBA /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		11EECFE026985CCB00A2CBBA /* swift_继承.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "swift_继承.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		112C988626942EA80021AC07 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				11EECFE026985CCB00A2CBBA /* swift_继承.md */,
 				11EECFB926942F8900A2CBBA /* landmarkData.json */,
 			);
 			path = Resource;
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EECFE126985CCB00A2CBBA /* swift_继承.md in Resources */,
 				112C985F2692AF270021AC07 /* Preview Assets.xcassets in Resources */,
 				112C985C2692AF270021AC07 /* Assets.xcassets in Resources */,
 				11EECFBA26942F8900A2CBBA /* landmarkData.json in Resources */,
